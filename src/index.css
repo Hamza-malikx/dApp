@@ -53,8 +53,32 @@ code {
   margin-right: 20px !important;
 }
 .dashboard__sidebar--footer .contact-list .item .link .doc-icon {
-  height: 30px !important;
-  width: 30px !important;
+  height: 37px !important;
+  width: 37px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .tel-icon {
+  height: 37px !important;
+  width: 37px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .med-icon {
+  height: 37px !important;
+  width: 37px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .twi-icon {
+  height: 37px !important;
+  width: 37px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .git-icon {
+  height: 37px !important;
+  width: 37px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .rad-icon {
+  height: 37px !important;
+  width: 37px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .inst-icon {
+  height: 37px !important;
+  width: 37px !important;
 }
 .dis-connect {
   color: #fff !important;
@@ -182,6 +206,9 @@ code {
   left: 3rem;
   background: #05a9f3;
 }
+.contact-list {
+  margin-top: 60px;
+}
 .overview__heading2 {
   font-size: 1.6rem;
   font-weight: 600;
@@ -200,7 +227,55 @@ code {
 }
 @media screen and (max-width: 500px) {
   .dashboard__sidebar--header {
+    display: block !important;
+  }
+  body {
+    background-color: #03b9f8;
+  }
+  .dashboard__sidebar--header {
+    background-color: #03b9f8 !important;
+    width: 68% !important;
+    z-index: 999;
+  }
+  .dashboard__header .heading-3 {
+    display: block !important;
+    position: absolute;
+    top: 15px;
+    font-size: 20px !important;
+    left: 131px;
+  }
+  .rrr {
     display: none !important;
+  }
+  .heading-3::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 10px;
+    height: 1.5px;
+    width: 16px;
+    background: #fff;
+    left: -140px;
+  }
+  .heading-3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 20px;
+    height: 1.5px;
+    width: 10px;
+    background: #fff;
+    left: -140px;
+  }
+  .logo {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+  }
+  .stst {
+    position: absolute;
+    top: 12px;
+    left: 112px;
   }
   .overview {
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;

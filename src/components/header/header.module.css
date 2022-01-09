@@ -273,12 +273,14 @@ label span {
 @media screen and (max-width: 500px) {
   .header {
     display: block;
+    z-index: 100;
   }
   .wrapperLogo {
     top: 2%;
     left: 10%;
     position: absolute;
   }
+
   .ss:hover {
     color: #ffba00 !important;
   }

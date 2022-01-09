@@ -54,12 +54,22 @@ function App() {
             </div>
             <div className="link-container">
               <Link to="/" className="stack-btn">
-                <img className="icon stake-icon" src={ssI} alt="stake icon" />
+                <img
+                  style={{ marginRight: "10px", width: "35px", height: "35px" }}
+                  className="stst"
+                  src={ssI}
+                  alt="stake icon"
+                />
               </Link>
             </div>
             <div className="link-container">
               <Link to="/swap">
-                <img className="" src={swI} alt="swap icon" />
+                <img
+                  className="rrr"
+                  style={{ marginRight: "10px", width: "35px", height: "35px" }}
+                  src={swI}
+                  alt="swap icon"
+                />
               </Link>
             </div>
           </div>
