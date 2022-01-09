@@ -125,8 +125,8 @@
   justify-content: center;
 }
 .td1st img {
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 32px;
 }
 
 .td2nd,
@@ -316,7 +316,7 @@
     width: 90%;
   }
   .left {
-    width: 100% !important;
+    width: 70% !important;
   }
   .right {
     display: none;
@@ -341,7 +341,7 @@
     font-size: 35px;
   }
   .tableDiv {
-    width: 100%;
+    width: 70%;
     overflow-x: scroll;
   }
   .table {

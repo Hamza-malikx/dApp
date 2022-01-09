@@ -11,9 +11,9 @@ import Button from "./components/button/button.component";
 import logo from "./assets/logo/icon.png";
 
 // ICON
-import stakeIcon from "./assets/icons/stake.png";
 import swapIcon from "./assets/icons/swap.png";
-
+import ssI from "./assets/images/stakeIcon.png";
+import swI from "./assets/images/swapicon.png";
 import docIcon from "./assets/icons/doc.png";
 import instaIcon from "./assets/icons/insta.png";
 import githubIcon from "./assets/icons/github.png";
@@ -34,7 +34,11 @@ function App() {
         {/* header */}
         <Header />
         <div className="dashboard__header">
-          <h3 className="heading-3">Stake</h3>
+          <h3 className="heading-3">
+            {" "}
+            <span className="largeLine"></span>
+            <span className="smallLine"></span>Stake
+          </h3>
           <div className="btn-container">
             <Button text={"DisConnect Wallet"} icon transparent />
             <Button text={"Connect Wallet"} icon />
@@ -50,20 +54,12 @@ function App() {
             </div>
             <div className="link-container">
               <Link to="/" className="stack-btn">
-                <img
-                  className="icon stake-icon"
-                  src={stakeIcon}
-                  alt="stake icon"
-                />
+                <img className="icon stake-icon" src={ssI} alt="stake icon" />
               </Link>
             </div>
             <div className="link-container">
               <Link to="/swap">
-                <img
-                  className="icon swap-icon"
-                  src={swapIcon}
-                  alt="swap icon"
-                />
+                <img className="" src={swI} alt="swap icon" />
               </Link>
             </div>
           </div>

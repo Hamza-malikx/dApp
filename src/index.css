@@ -11,6 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.heading-3 {
+  position: relative;
+  margin-left: 34px;
+}
+.heading-3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  height: 1.5px;
+  width: 16px;
+  background: #fff;
+  left: -30px;
+}
+.heading-3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 80%;
+  height: 1.5px;
+  width: 10px;
+  background: #fff;
+  left: -30px;
+}
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -23,6 +47,14 @@ code {
 }
 .table > :not(:first-child) {
   border-top: 2px solid transparent !important;
+}
+.dashboard__sidebar--footer .contact-list .item:not(:last-child) {
+  margin-bottom: 4rem !important;
+  margin-right: 20px !important;
+}
+.dashboard__sidebar--footer .contact-list .item .link .doc-icon {
+  height: 30px !important;
+  width: 30px !important;
 }
 .dis-connect {
   color: #fff !important;
@@ -45,9 +77,9 @@ code {
   background-color: #2384f9;
 }
 .harvest {
-  background-color: #2384f9;
+  background-color: #1f86ff;
   border-radius: 15px;
-  border: 2px solid #2384f9;
+  border: 2px solid #1f86ff;
   color: #fff;
   padding: 1px 10px;
   margin-right: 10px;
@@ -107,9 +139,57 @@ code {
   height: 40px;
 }
 .overview-card .text-container .text {
-  font-size: 25px !important;
+  font-size: 14px !important;
   font-weight: 600;
   text-transform: uppercase;
+}
+.stake__overview {
+  display: block !important;
+
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .ovv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .overview {
+    margin-bottom: 20px;
+
+    margin-right: 10px;
+    width: 100% !important;
+  }
+}
+.ovv {
+  display: flex;
+  justify-content: space-between;
+}
+.overview {
+  margin-right: 10px;
+  width: 50%;
+}
+.overview-card {
+  width: 100%;
+}
+.overview__heading1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  position: absolute;
+  top: -1.5rem;
+  left: 3rem;
+  background: #05a9f3;
+}
+.overview__heading2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  position: absolute;
+  top: -1.5rem;
+  left: 3rem;
+  background: #0992ec;
 }
 @media screen and (max-width: 1400px) {
   .overview-card .text-container .text {
@@ -124,7 +204,7 @@ code {
   }
   .overview {
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-    width: 100% !important;
+    width: 70% !important;
   }
   ._tableDiv_1xfew_191 {
     overflow-x: scroll !important;

@@ -1,102 +1,99 @@
-@import '../../sass/variables.scss';
-@import '../../sass/mixins.scss';
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
 
-.stake{
+.stake {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-gap: 2rem;
 
+  @include response(phone) {
+    grid-gap: 4rem;
+  }
+
+  &__notice {
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+  }
+  &__overview {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 
-    @include response(phone){
-        grid-gap: 4rem;
+    @include response(tab-port) {
+      grid-template-columns: 1fr;
+
+      grid-gap: 4rem;
+    }
+  }
+  &__history {
+    .heading {
+      font-size: 1.8rem;
+
+      @include response(phone) {
+        font-size: 2.5rem;
+      }
     }
 
-    &__notice{
-        overflow: hidden;
-        display: flex;
-        gap: 2rem;
+    .table-container {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+
+      @include response(phone) {
+        width: 60rem;
+      }
     }
-    &__overview{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
 
-        @include response (tab-port){
-            grid-template-columns: 1fr;
+    .table {
+      background-color: #0c75c58a;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 0.5rem;
+      border-radius: 1.2rem;
+      width: 100%;
+      border-spacing: 0;
 
-            grid-gap: 4rem;
+      @include response(phone) {
+        font-size: 2rem;
+      }
+
+      &__head {
+        text-align: left;
+        text-transform: uppercase;
+        background-color: #0262ac8a;
+        height: 4rem;
+
+        .first-th {
+          border-radius: 1rem 0 0 1rem;
         }
+        .last-th {
+          border-radius: 0 1rem 1rem 0;
+        }
+      }
+      &__body {
+        .td-last {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+        }
+      }
+
+      th,
+      td {
+        padding: 0.5rem 1.5rem;
+        vertical-align: middle;
+      }
+      td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+      }
+      .token-icon {
+        width: 2.2rem;
+
+        @include response(phone) {
+          width: 3rem;
+        }
+      }
     }
-    &__history{
-        .heading{
-            font-size: 1.8rem;
-
-            @include response(phone){
-                font-size: 2.5rem;
-            }
-        }
-
-        .table-container{
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
-
-            @include response(phone){
-                width: 60rem;
-            }
-        }
-
-        .table{
-            background-color: #0c75c58a;
-            font-size: 1.6rem;
-            font-weight: 300;
-            padding: .5rem;
-            border-radius: 1.2rem;
-            width: 100%;
-            border-spacing: 0;
-
-            @include response(phone){
-                font-size: 2rem;
-            }
-            
-            &__head{
-                text-align: left;
-                text-transform: uppercase;
-                background-color: #0262ac8a;
-                height: 4rem;
-                
-                .first-th{
-                    border-radius: 1rem 0 0 1rem;
-                    
-                }
-                .last-th{
-                    border-radius: 0 1rem 1rem 0;
-                    
-                }
-            }
-            &__body{
-                .td-last{
-                    display: flex;
-                    align-items: center;
-                    gap: 1.5rem;
-                }
-            }
-
-            th, td{
-                padding: .5rem 1.5rem;
-                vertical-align: middle;
-                
-            }
-            td{
-                border-bottom: 1px solid rgba(255, 255, 255, 0.199);
-            }
-            .token-icon{
-                width: 2.2rem;
-
-                @include response(phone){
-                    width: 3rem;
-                }
-            }
-        }
-    }
+  }
 }

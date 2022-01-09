@@ -9,8 +9,8 @@ export default function OverviewCard(props) {
     <div className="overview-card">
       <img className="icon" src={props.price} alt="icon" />
       <div className="text-container" style={{ color: "white" }}>
-        <p className="text">hello people</p>
-        <span className="number">$12000</span>
+        <p className="text">{props.text}</p>
+        <span className="number">{props.prize}</span>
       </div>
     </div>
   );

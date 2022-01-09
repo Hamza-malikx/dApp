@@ -41,7 +41,7 @@ export default function Stake() {
       </div>
       <div className="stake__overview">
         <Overview />
-        <Overview />
+        {/* <Overview text={"text1"} /> */}
       </div>
       <div className="stake__history">
         <h2 className="heading" style={{ color: "white" }}>

@@ -235,7 +235,7 @@ label span {
     flex-direction: column;
     z-index: 999;
     position: absolute;
-    right: 27px;
+    right: 187px;
     bottom: 0px;
   }
   .wrapperItems {
@@ -275,7 +275,8 @@ label span {
     display: block;
   }
   .wrapperLogo {
-    top: 20%;
+    top: 2%;
+    left: 10%;
     position: absolute;
   }
   .ss:hover {
