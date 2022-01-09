@@ -11,9 +11,12 @@
   width: 67%;
   margin-right: 20px;
 }
+.leftDivContent {
+  /* padding: 120px 0; */
+}
 .leftDivContent h2 span {
   margin-right: 25px;
-  font-size: 23px;
+  font-size: 40px;
   color: #fff;
 }
 .leftDivContent h1 span {
@@ -29,7 +32,7 @@
 }
 .leftDivContent h4 span {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 30px;
   margin-right: 10px;
   color: #fff;
 }
@@ -52,13 +55,15 @@
 .graph {
   margin-top: 10px;
   width: 100%;
-  height: auto;
+  height: 35vh;
 }
 .hoursProgress {
   list-style: none;
   display: flex;
   justify-content: space-between;
   color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .rightDiv {
   background-color: #1563c6;
@@ -80,14 +85,15 @@
 }
 .swap {
   margin-left: 15px;
-  font-size: 22px;
+  font-size: 30px;
+  color: #fff;
 }
 .swapIcon2 {
   margin-right: 16px;
 }
 .select {
   color: #fff !important;
-  margin-top: 20px !important;
+  margin-top: 40px !important;
   margin-bottom: 8px !important;
   width: 100%;
 }
@@ -103,24 +109,35 @@
   display: flex;
 }
 .selectimg {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+}
+.loading {
+  margin: 40px 0;
+  text-align: center;
 }
 .selectRow {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0 0;
+}
+.selectRow span {
+  font-size: 25px;
+  line-height: 58px;
 }
 .dIcon {
   width: 20px;
-  margin-top: 4px;
+  margin-top: 18px;
 }
 .balance {
   justify-content: space-between;
   display: flex;
+  margin: 20px 0;
 }
 .balance h3 {
   color: #fff;
-  font-size: 15px;
+  font-size: 30px;
 }
 .balance h5 {
   background-color: #ffba00;
@@ -132,29 +149,42 @@
 .slipageT {
   display: flex;
   justify-content: space-between;
+  margin-top: 14px;
 }
 .slipageT h5 {
   color: #00bdff;
+  font-size: 30px;
 }
 .slipageT h6 {
   color: #00bdff;
+  font-size: 30px;
 }
 .thead {
   background-color: #176fca !important;
   border-radius: 10px !important;
   color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  padding: 100px !important;
 }
+.tr th {
+  padding: 20px 0;
+}
+
 .tableDiv {
-  background-color: #1083da;
-  padding: 4px;
   border-radius: 7px !important;
 }
 
 .table {
+  background-color: #1083da;
   border-radius: 1.2rem !important;
+  border-collapse: separate;
+  border-spacing: 0 31px;
+  padding: 4px;
 }
 .first {
   border-radius: 1rem 0 0 1rem;
+  padding: 20px 0;
 }
 .last {
   border-radius: 0 1rem 1rem 0;
@@ -167,12 +197,13 @@
   display: flex;
 }
 .td1st img {
-  width: 15px;
-  height: 15px;
+  width: 35px;
+  height: 35px;
 }
 .td1st h6 {
   margin-left: 10px;
   margin-top: 2px;
+  font-size: 25px;
 }
 
 .td2nd,
@@ -180,37 +211,87 @@
   text-align: center;
 }
 .td2nd img {
-  width: 27px;
-  height: 20px;
+  width: 35px;
+  height: 27px;
 }
 .td3rd {
   display: flex;
   justify-content: center;
 }
 .td3rd img {
-  width: 15px;
-  height: 15px;
+  width: 35px;
+  height: 35px;
 }
 .td3rd h6 {
-  font-size: 14px;
   margin-left: 3px;
   font-weight: normal;
+  font-size: 25px;
 }
 .input {
   width: 100%;
+  margin-top: 20px;
 }
 .input input {
   width: 100%;
   background-color: transparent;
   border: 1px solid #c9c9c9;
-  padding: 10px 20px;
+  padding: 24px 20px;
   color: #fff;
   text-align: center;
   border-radius: 8px;
   outline: none;
+  font-size: 25px;
+  margin-top: 40px;
 }
 .input input::placeholder {
   color: #fff;
+  font-size: 25px;
+}
+@media screen and (max-width: 1440px) {
+  .graph {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .input input {
+    margin-top: 10px;
+    padding: 15px 20px;
+  }
+  .loading {
+    margin: 5px 0;
+  }
+  .thead {
+    font-size: 17px;
+  }
+  .td1st h6 {
+    font-size: 17px;
+  }
+  .td3rd h6 {
+    font-size: 17px;
+  }
+  .td3rd img,
+  .td1st img {
+    width: 27px;
+    height: 27px;
+  }
+  .select {
+    margin-top: 10px !important;
+  }
+  .balance {
+    margin: 5px 0 !important;
+  }
+  .select button:nth-child(1) {
+    padding: 0 10px !important;
+  }
+  .balance h3 {
+    font-size: 17px;
+  }
+  .slipageT h5 {
+    font-size: 17px;
+  }
+  .slipageT h6 {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 900px) {
   .mainRow {
@@ -223,5 +304,99 @@
   .rightDiv {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .thead {
+    font-size: 14px;
+  }
+  .td1st h6 {
+    font-size: 14px;
+  }
+  .td3rd h6 {
+    font-size: 14px;
+  }
+  .td3rd img,
+  .td1st img {
+    width: 20px;
+    height: 20px;
+  }
+  .selectimg {
+    margin-bottom: 13px;
+  }
+  .td2nd img {
+    width: 27px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mainRow {
+    flex-wrap: wrap;
+  }
+  .leftDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .rightDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .thead {
+    font-size: 12px;
+  }
+  .td1st h6 {
+    font-size: 12px;
+  }
+  .td3rd h6 {
+    font-size: 12px;
+  }
+  .td3rd img,
+  .td1st img {
+    width: 17px;
+    height: 17px;
+  }
+  .selectimg {
+    margin-bottom: 13px;
+  }
+  .td2nd img {
+    width: 23px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainRow {
+    flex-wrap: wrap;
+  }
+  .leftDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .rightDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .thead {
+    font-size: 12px;
+  }
+  .td1st h6 {
+    font-size: 12px;
+  }
+  .td3rd h6 {
+    font-size: 12px;
+  }
+  .td3rd img,
+  .td1st img {
+    width: 17px;
+    height: 17px;
+  }
+  .selectimg {
+    margin-bottom: 13px;
+  }
+  .td2nd img {
+    width: 23px;
+    height: 18px;
+  }
+
+  .th2nd,
+  .tdd2 {
+    display: none !important;
   }
 }

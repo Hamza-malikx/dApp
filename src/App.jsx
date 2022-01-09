@@ -26,11 +26,13 @@ import chainIcon from "./assets/icons/chain.png";
 
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/header/Header";
 function App() {
   return (
     <>
       <div className="dashboard">
         {/* header */}
+        <Header />
         <div className="dashboard__header">
           <h3 className="heading-3">Stake</h3>
           <div className="btn-container">

@@ -50,6 +50,7 @@ code {
   border: 2px solid #2384f9;
   color: #fff;
   padding: 1px 10px;
+  margin-right: 10px;
 }
 .stake1 {
   background-color: #403eaa;
@@ -57,6 +58,7 @@ code {
   border: 2px solid #403eaa;
   color: #fff;
   padding: 1px 10px;
+  margin-right: 10px;
 }
 .unstake1 {
   background-color: #ff5f60;
@@ -65,7 +67,8 @@ code {
   color: #fff;
   padding: 1px 10px;
 }
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 1040px) {
   body {
     background: #0990ec !important;
   }
@@ -91,5 +94,80 @@ code {
   }
   .stake__history .table-container {
     width: 100% !important;
+  }
+}
+.stake__overview {
+  margin-top: 20px;
+}
+.stake__history .heading {
+  font-size: 2.8rem !important;
+}
+.overview-card img {
+  width: 40px !important;
+  height: 40px;
+}
+.overview-card .text-container .text {
+  font-size: 25px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1400px) {
+  .overview-card .text-container .text {
+    font-size: 20px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 500px) {
+  .dashboard__sidebar--header {
+    display: none !important;
+  }
+  .overview {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    width: 100% !important;
+  }
+  ._tableDiv_1xfew_191 {
+    overflow-x: scroll !important;
+    width: 100%;
+  }
+  .harvest {
+    background-color: #2384f9;
+    border-radius: 15px;
+    border: 2px solid #2384f9;
+    color: #fff;
+    padding: 1px 5px;
+    margin-right: 3px;
+    font-size: 12px;
+  }
+  .stake1 {
+    background-color: #403eaa;
+    border-radius: 15px;
+    border: 2px solid #403eaa;
+    color: #fff;
+    padding: 1px 5px;
+    margin-right: 3px;
+    font-size: 12px;
+  }
+  .unstake1 {
+    background-color: #ff5f60;
+    border-radius: 15px;
+    border: 2px solid #ff5f60;
+    color: #fff;
+    padding: 1px 5px;
+    font-size: 12px;
+  }
+  .dis-connect {
+    border-radius: 27px !important;
+    font-size: 18px !important;
+    padding: 1.575rem 2.95rem !important;
+  }
+  .connect {
+    border-radius: 27px !important;
+    padding: 1.5rem 4.95rem !important;
+    font-size: 18px !important;
+  }
+  .dis-connect:hover {
+    background-color: #ffba00;
+    border: 1px solid #ffba00 !important;
   }
 }

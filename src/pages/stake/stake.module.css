@@ -1,0 +1,360 @@
+.left {
+  background-color: #1563c6;
+  width: 65%;
+  border-radius: 20px;
+}
+.right {
+  background-color: #1563c6;
+  width: 35%;
+  border-radius: 20px;
+}
+.leftImg {
+  background-image: url("../../assets/images/Layer11.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 63% 30%;
+  width: 100%;
+  /* height: 45rem; */
+  position: relative;
+  /* right: -181px; */
+}
+.rightBgImg {
+  background-image: url("../../assets/images/design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -63% 30%;
+  width: 100%;
+  height: 45rem;
+  position: relative;
+}
+.leftImg img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.leftContent {
+  margin-left: 40px;
+  padding-top: 70px;
+  padding-bottom: 185px;
+}
+.safe {
+  color: #00bdff;
+  font-size: 70px;
+  font-weight: bold;
+}
+.chain {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: bold;
+}
+.swap {
+  color: #00bdff;
+  font-size: 70px;
+  font-weight: bold;
+}
+.leftContent h5 {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: 10px;
+}
+.tt {
+  border: 1px solid #fff;
+  padding: 0 5px;
+}
+.swapAgain {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: 20px !important;
+}
+.learnMore {
+  background-color: #ffba00;
+  border: 1px solid #ffba00;
+  width: 18%;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 28px;
+  margin-top: 10px;
+}
+.learnMoreAgain {
+  background-color: #ffba00;
+  border: 1px solid #ffba00;
+  width: 38%;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 28px;
+  margin-top: 10px;
+}
+.thead {
+  background-color: #176fca !important;
+  border-radius: 10px !important;
+  color: #fff;
+}
+.tableDiv {
+  background-color: #1083da;
+  padding: 4px;
+  border-radius: 7px !important;
+}
+
+.table {
+  border-radius: 1.2rem !important;
+  border-collapse: separate !important;
+  border-spacing: 0 15px !important;
+  font-size: 25px !important;
+}
+.first {
+  border-radius: 1rem 0 0 1rem;
+}
+.last {
+  border-radius: 0 1rem 1rem 0;
+  text-align: center;
+  padding-right: 70px !important;
+}
+.tbody {
+  color: #fff;
+  font-size: 21px;
+}
+.td1st {
+  display: flex;
+}
+.td4st {
+  display: flex;
+  justify-content: center;
+}
+.td1st img {
+  width: 25px;
+  height: 25px;
+}
+
+.td2nd,
+.th2nd {
+  text-align: center;
+}
+.td2nd h5,
+.td2nd h6 {
+  font-size: 25px !important;
+}
+.td3rd h6,
+.td4st h6 {
+  font-size: 25px !important;
+}
+.td2nd img {
+  width: 27px;
+  height: 20px;
+}
+.td3rd {
+  display: flex;
+  justify-content: center;
+}
+.td3rd img {
+  width: 15px;
+  height: 15px;
+}
+.td3rd h6 {
+  font-size: 14px;
+  margin-left: 3px;
+  font-weight: normal;
+}
+.tdLast {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 1640px) {
+  .leftImg {
+    background-image: url(/src/assets/images/Layer11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 24%;
+    width: 115%;
+  }
+  .safe,
+  .chain,
+  .swap {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .leftImg {
+    background-image: url(/src/assets/images/Layer11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 24%;
+    width: 115%;
+  }
+  .leftContent h5 {
+    font-size: 20px !important;
+  }
+  .swapAgain {
+    font-size: 20px !important;
+  }
+  .learnMore,
+  .learnMoreAgain {
+    font-size: 15px;
+  }
+  .safe,
+  .chain,
+  .swap {
+    font-size: 35px;
+  }
+  .table {
+    font-size: 20px !important;
+  }
+  .td2nd h5,
+  .td2nd h6 {
+    font-size: 20px !important;
+  }
+  .td3rd h6,
+  .td4st h6 {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .leftContent h5 {
+    font-size: 15px !important;
+  }
+  .swapAgain {
+    font-size: 15px !important;
+  }
+  .learnMore {
+    font-size: 15px;
+    width: 20% !important;
+    padding: 4px 4px;
+  }
+  .learnMoreAgain {
+    font-size: 15px;
+    width: 56% !important;
+    padding: 4px 4px;
+  }
+  .safe,
+  .chain,
+  .swap {
+    font-size: 28px;
+  }
+  .table {
+    font-size: 16px !important;
+  }
+  .td2nd h5,
+  .td2nd h6 {
+    font-size: 16px !important;
+  }
+  .td3rd h6,
+  .td4st h6 {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .leftImg {
+    background-image: url(/src/assets/images/rocket.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 7% 149px;
+    width: 115%;
+  }
+  .learnMore {
+    font-size: 15px;
+    width: 20% !important;
+    padding: 4px 4px;
+  }
+  .learnMoreAgain {
+    font-size: 15px;
+    width: 20% !important;
+    padding: 4px 4px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .leftImg {
+    background-image: url(/src/assets/images/rocket.png);
+    background-size: 86%;
+    background-repeat: no-repeat;
+    background-position: -24% 107px;
+    width: 115%;
+  }
+  .leftContent {
+    margin-left: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  .swapAgain {
+    font-size: 20px !important;
+  }
+  .learnMore,
+  .learnMoreAgain {
+    font-size: 15px;
+  }
+  .safe,
+  .chain,
+  .swap {
+    font-size: 35px;
+  }
+  .table {
+    font-size: 20px !important;
+  }
+  .td2nd h5,
+  .td2nd h6 {
+    font-size: 20px !important;
+  }
+  .td3rd h6,
+  .td4st h6 {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .leftImg {
+    background-image: url(/src/assets/images/rocket.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 192% 155px;
+    width: 90%;
+  }
+  .left {
+    width: 100% !important;
+  }
+  .right {
+    display: none;
+  }
+  .leftContent {
+    margin-left: 0;
+    padding-top: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .swapAgain {
+    font-size: 20px !important;
+  }
+  .learnMore,
+  .learnMoreAgain {
+    font-size: 15px;
+    width: 40% !important;
+  }
+  .safe,
+  .chain,
+  .swap {
+    font-size: 35px;
+  }
+  .tableDiv {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .table {
+    font-size: 12px !important;
+    width: 50%;
+    overview-x: scroll !important;
+  }
+  .td2nd h5,
+  .td2nd h6 {
+    font-size: 12px !important;
+  }
+  .td3rd h6,
+  .td4st h6 {
+    font-size: 12px !important;
+  }
+}

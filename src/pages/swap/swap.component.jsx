@@ -114,7 +114,7 @@ export default function Swap() {
                 <h5>Max</h5>
               </div>
             </div>
-            <div style={{ textAlign: "center", marginBottom: "20px" }}>
+            <div className={styles.loading}>
               <img src={rrIcon} alt="" />
             </div>
             <div>
@@ -152,7 +152,7 @@ export default function Swap() {
               </div>
             </div>
             <div className={styles.input}>
-              <input type="text" placeholder="asjd" />
+              <input type="text" placeholder="Enter an Amount" />
             </div>
           </div>
         </div>
@@ -164,13 +164,25 @@ export default function Swap() {
         <div className={styles.tableDiv}>
           <Table size="sm" className={styles.table}>
             <thead className={styles.thead}>
-              <tr>
-                <th className={styles.first}>SWAPPED TOKENS</th>
-                <th className={styles.th2nd}>BSCSCAN</th>
-                <th className={styles.th2nd}>Validation</th>
-                <th>SWAPPED TOKENS</th>
-                <th className={styles.th2nd}>BSCSCAN</th>
-                <th className={styles.last}>Validation</th>
+              <tr className={styles.tr}>
+                <th style={{ padding: "20px 0" }} className={styles.first}>
+                  SWAPPED TOKENS
+                </th>
+                <th style={{ padding: "20px 0" }} className={styles.th2nd}>
+                  BSCSCAN
+                </th>
+                <th style={{ padding: "20px 0" }} className={styles.th2nd}>
+                  Validation
+                </th>
+                <th style={{ padding: "20px 0" }} className={styles.thss}>
+                  SWAPPED TOKENS
+                </th>
+                <th style={{ padding: "20px 0" }} className={styles.th2nd}>
+                  BSCSCAN
+                </th>
+                <th style={{ padding: "20px 0" }} className={styles.last}>
+                  Validation
+                </th>
               </tr>
             </thead>
             <tbody className={styles.tbody}>
@@ -185,7 +197,7 @@ export default function Swap() {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td2nd}>
                     <img src={bscIcon} alt="" />
                   </div>
@@ -200,7 +212,7 @@ export default function Swap() {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td1st}>
                     <div>
                       <img src={bIcon} alt="" />
@@ -215,7 +227,7 @@ export default function Swap() {
                     <img src={bscIcon} alt="" />
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td3rd}>
                     <div>
                       <img src={success} alt="" />
@@ -237,7 +249,7 @@ export default function Swap() {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td2nd}>
                     <img src={bscIcon} alt="" />
                   </div>
@@ -252,7 +264,7 @@ export default function Swap() {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td1st}>
                     <div>
                       <img src={bIcon} alt="" />
@@ -267,7 +279,7 @@ export default function Swap() {
                     <img src={bscIcon} alt="" />
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td3rd}>
                     <div>
                       <img src={failed} alt="" />
@@ -289,7 +301,7 @@ export default function Swap() {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td2nd}>
                     <img src={bscIcon} alt="" />
                   </div>
@@ -304,7 +316,7 @@ export default function Swap() {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td1st}>
                     <div>
                       <img src={bIcon} alt="" />
@@ -319,7 +331,7 @@ export default function Swap() {
                     <img src={bscIcon} alt="" />
                   </div>
                 </td>
-                <td>
+                <td className={styles.tdd2}>
                   <div className={styles.td3rd}>
                     <div>
                       <img src={success} alt="" />

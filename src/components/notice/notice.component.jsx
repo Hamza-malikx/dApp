@@ -12,7 +12,6 @@ import "../../sass/typography.scss";
 export default function Notice() {
   return (
     <div className="notice">
-      <img className="bg-layer" src={layer1} alt="bg layer" />
       <div className="content">
         <h1 className="heading">
           <span className="highlight">Safe</span>
@@ -27,6 +26,7 @@ export default function Notice() {
         </p>
         <Button text={"LEARN MORE"} />
       </div>
+      <img className="bg-layer" src={layer1} alt="bg layer" />
     </div>
   );
 }

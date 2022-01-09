@@ -1,5 +1,7 @@
 import React from "react";
-
+import price from "../../assets/icons/price.png";
+import holding from "../../assets/images/holding.png";
+import cap from "../../assets/images/cap.png";
 // COMPONENT
 import OverviewCard from "../overview-card/overview-card.component";
 
@@ -12,9 +14,9 @@ export default function Overview() {
         SCT Overview
       </p>
       <div className="card-container">
-        <OverviewCard />
-        <OverviewCard />
-        <OverviewCard />
+        <OverviewCard price={cap} />
+        <OverviewCard price={price} />
+        <OverviewCard price={holding} />
       </div>
     </div>
   );
