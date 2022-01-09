@@ -1,0 +1,227 @@
+.mainRow {
+  display: flex;
+  flex-wrap: no-wrap;
+  font-family: "Khula", sans-serif;
+}
+.leftDiv {
+  background-color: #1563c6;
+  padding: 40px;
+  border-radius: 15px;
+  flex: 0 0 auto;
+  width: 67%;
+  margin-right: 20px;
+}
+.leftDivContent h2 span {
+  margin-right: 25px;
+  font-size: 23px;
+  color: #fff;
+}
+.leftDivContent h1 span {
+  color: #00bdff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.leftDivContent h1 span:last-child {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+.leftDivContent h4 span {
+  font-weight: normal;
+  font-size: 15px;
+  margin-right: 10px;
+  color: #fff;
+}
+.progress {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+.progress li {
+  margin-right: 15px;
+  padding: 3px 12px 0;
+  font-size: 15px;
+  color: #fff;
+}
+.progress li:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+}
+.graph {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.hoursProgress {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.rightDiv {
+  background-color: #1563c6;
+  padding: 40px;
+  border-radius: 15px;
+  flex: 0 0 auto;
+  width: 31%;
+}
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+}
+.swapIcon {
+  width: 30px;
+  height: 30px;
+}
+.firstS {
+  display: flex;
+}
+.swap {
+  margin-left: 15px;
+  font-size: 22px;
+}
+.swapIcon2 {
+  margin-right: 16px;
+}
+.select {
+  color: #fff !important;
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+  width: 100%;
+}
+.select button:nth-child(1) {
+  background: transparent !important;
+  border: 0.1px solid #c9c9c9 !important;
+  border-radius: 8px !important;
+  width: 100%;
+  text-align: left;
+  padding: 10px !important;
+}
+.def {
+  display: flex;
+}
+.selectimg {
+  width: 20px;
+  height: 20px;
+}
+.selectRow {
+  display: flex;
+  justify-content: space-between;
+}
+.dIcon {
+  width: 20px;
+  margin-top: 4px;
+}
+.balance {
+  justify-content: space-between;
+  display: flex;
+}
+.balance h3 {
+  color: #fff;
+  font-size: 15px;
+}
+.balance h5 {
+  background-color: #ffba00;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 20px 3px;
+  border-radius: 12px;
+}
+.slipageT {
+  display: flex;
+  justify-content: space-between;
+}
+.slipageT h5 {
+  color: #00bdff;
+}
+.slipageT h6 {
+  color: #00bdff;
+}
+.thead {
+  background-color: #176fca !important;
+  border-radius: 10px !important;
+  color: #fff;
+}
+.tableDiv {
+  background-color: #1083da;
+  padding: 4px;
+  border-radius: 7px !important;
+}
+
+.table {
+  border-radius: 1.2rem !important;
+}
+.first {
+  border-radius: 1rem 0 0 1rem;
+}
+.last {
+  border-radius: 0 1rem 1rem 0;
+  text-align: center;
+}
+.tbody {
+  color: #fff;
+}
+.td1st {
+  display: flex;
+}
+.td1st img {
+  width: 15px;
+  height: 15px;
+}
+.td1st h6 {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.td2nd,
+.th2nd {
+  text-align: center;
+}
+.td2nd img {
+  width: 27px;
+  height: 20px;
+}
+.td3rd {
+  display: flex;
+  justify-content: center;
+}
+.td3rd img {
+  width: 15px;
+  height: 15px;
+}
+.td3rd h6 {
+  font-size: 14px;
+  margin-left: 3px;
+  font-weight: normal;
+}
+.input {
+  width: 100%;
+}
+.input input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #c9c9c9;
+  padding: 10px 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  outline: none;
+}
+.input input::placeholder {
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .mainRow {
+    flex-wrap: wrap;
+  }
+  .leftDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .rightDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

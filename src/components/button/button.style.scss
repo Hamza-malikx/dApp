@@ -1,0 +1,39 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.btn{                
+    border-radius: 3rem;
+    padding: .7rem 2rem;
+    color: $color-text;
+    border: none;
+    font-size: 1.4rem;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @include response(phone){
+        font-size: 2rem;
+        padding: 1rem 2.5rem;
+    }
+
+    .icon{
+        height: 1.5rem;
+    }
+}
+.dis-connect{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+}
+.connect{
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+}
+
+.hide{
+    display: none;
+}

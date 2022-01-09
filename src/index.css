@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu.show {
+  display: block;
+  width: 100%;
+}
+.table {
+  border-color: transparent !important;
+}
+.table > :not(:first-child) {
+  border-top: 2px solid transparent !important;
+}
+.dis-connect {
+  color: #fff !important;
+  border: 1px #fff solid !important;
+  border-radius: 14px !important;
+  padding: 0.575rem 0.95rem !important;
+}
+.connect {
+  color: #fff !important;
+  border-radius: 14px !important;
+  padding: 0.575rem 0.95rem !important;
+  background-color: #ffba00 !important;
+  border: 1px solid #ffba00 !important;
+}
+.dis-connect:hover {
+  background-color: #ffba00;
+  border: 1px solid #ffba00 !important;
+}
+.xyz {
+  background-color: #2384f9;
+}
+.harvest {
+  background-color: #2384f9;
+  border-radius: 15px;
+  border: 2px solid #2384f9;
+  color: #fff;
+  padding: 1px 10px;
+}
+.stake1 {
+  background-color: #403eaa;
+  border-radius: 15px;
+  border: 2px solid #403eaa;
+  color: #fff;
+  padding: 1px 10px;
+}
+.unstake1 {
+  background-color: #ff5f60;
+  border-radius: 15px;
+  border: 2px solid #ff5f60;
+  color: #fff;
+  padding: 1px 10px;
+}
+@media screen and (max-width: 640px) {
+  body {
+    background: #0990ec !important;
+  }
+  /* .connect {
+    padding: 1.575rem 6.95rem !important;
+  } */
+}
+@media screen and (max-width: 900px) {
+  .stake__notice {
+    display: flex;
+    flex-direction: column;
+  }
+  .notice {
+    width: 100% !important;
+  }
+  .stake__overview {
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    width: 99%;
+  }
+  .stake__history {
+    width: 100% !important;
+  }
+  .stake__history .table-container {
+    width: 100% !important;
+  }
+}
